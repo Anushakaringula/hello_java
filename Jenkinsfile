@@ -15,7 +15,7 @@ pipeline {
             sh '''
                 rm -rf build
                 mkdir build
-                javac -d build src/Hello.java
+                javac -d build src/hello.java
                 jar cfe hello.jar Hello -C build .
             '''
         }
